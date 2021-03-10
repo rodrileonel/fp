@@ -18,8 +18,8 @@ class CouponsDetailFragment(private val coupon: CouponView?) : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         ivImage.loadFromUrl(coupon?.image!!)
-        tvName.text = coupon.name
-        tvDescription.text = coupon.description
+        tvName.text = "Name: ${coupon.name}"
+        tvDescription.text = "Description: ${coupon.description}"
     }
 
 }
